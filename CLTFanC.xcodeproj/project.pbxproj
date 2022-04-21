@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4705788E28101D8400852F32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4705788D28101D8400852F32 /* GoogleService-Info.plist */; };
+		4705789128101E8D00852F32 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789028101E8D00852F32 /* FirebaseAnalytics */; };
+		4705789328101E8D00852F32 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789228101E8D00852F32 /* FirebaseAuth */; };
+		4705789528101E8D00852F32 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789428101E8D00852F32 /* FirebaseFirestore */; };
+		4705789728101E8D00852F32 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789628101E8D00852F32 /* FirebaseStorage */; };
+		470578A128102B9D00852F32 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A028102B9D00852F32 /* Player.swift */; };
+		470578A42810551700852F32 /* PlayerCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A32810551700852F32 /* PlayerCardsViewModel.swift */; };
+		470578A6281068C100852F32 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A5281068C100852F32 /* GamesViewModel.swift */; };
+		470578A8281068FD00852F32 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A7281068FD00852F32 /* Game.swift */; };
+		470578AA28106A8A00852F32 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A928106A8A00852F32 /* Team.swift */; };
+		4747B15E280F21D200D25E8B /* LargeCardGame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747B15D280F21D200D25E8B /* LargeCardGame2.swift */; };
+		4760392C2808FD76003B587C /* CLTFanCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760392B2808FD76003B587C /* CLTFanCApp.swift */; };
+		4760392E2808FD76003B587C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760392D2808FD76003B587C /* ContentView.swift */; };
+		476039302808FD76003B587C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4760392F2808FD76003B587C /* Assets.xcassets */; };
+		476039332808FD76003B587C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476039322808FD76003B587C /* Preview Assets.xcassets */; };
+		478C979C280F8EA7001BFC06 /* NextGameCardEven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C979B280F8EA7001BFC06 /* NextGameCardEven.swift */; };
+		478C979E280F9611001BFC06 /* NextGameCardOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C979D280F9611001BFC06 /* NextGameCardOdd.swift */; };
+		47A1EB422809F063005DC545 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1EB412809F063005DC545 /* PlayerCard.swift */; };
+		47A1EB44280A5433005DC545 /* PlayerCardMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1EB43280A5433005DC545 /* PlayerCardMini.swift */; };
+		47B3BE78280B6BA8004A0FF6 /* AllPlayersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B3BE77280B6BA8004A0FF6 /* AllPlayersCard.swift */; };
+		47FE611B280E35BF00620DEC /* Albertus Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */; };
+		47FE611E280E3D8000620DEC /* LargeGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE611D280E3D8000620DEC /* LargeGameCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4705788D28101D8400852F32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		470578A028102B9D00852F32 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		470578A32810551700852F32 /* PlayerCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsViewModel.swift; sourceTree = "<group>"; };
+		470578A5281068C100852F32 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		470578A7281068FD00852F32 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		470578A928106A8A00852F32 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4747B15D280F21D200D25E8B /* LargeCardGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCardGame2.swift; sourceTree = "<group>"; };
+		476039282808FD76003B587C /* CLTFanC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLTFanC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4760392B2808FD76003B587C /* CLTFanCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTFanCApp.swift; sourceTree = "<group>"; };
+		4760392D2808FD76003B587C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4760392F2808FD76003B587C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		476039322808FD76003B587C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		478C979B280F8EA7001BFC06 /* NextGameCardEven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameCardEven.swift; sourceTree = "<group>"; };
+		478C979D280F9611001BFC06 /* NextGameCardOdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameCardOdd.swift; sourceTree = "<group>"; };
+		47A1EB412809F063005DC545 /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
+		47A1EB43280A5433005DC545 /* PlayerCardMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardMini.swift; sourceTree = "<group>"; };
+		47B3BE77280B6BA8004A0FF6 /* AllPlayersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayersCard.swift; sourceTree = "<group>"; };
+		47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albertus Nova Bold.otf"; sourceTree = "<group>"; };
+		47FE611C280E35E800620DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47FE611D280E3D8000620DEC /* LargeGameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeGameCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		476039252808FD76003B587C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4705789128101E8D00852F32 /* FirebaseAnalytics in Frameworks */,
+				4705789728101E8D00852F32 /* FirebaseStorage in Frameworks */,
+				4705789328101E8D00852F32 /* FirebaseAuth in Frameworks */,
+				4705789528101E8D00852F32 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4705789828102AA600852F32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4705789B28102ADD00852F32 /* Games */,
+				4705789A28102AD200852F32 /* Players */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4705789928102AB300852F32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				470578A028102B9D00852F32 /* Player.swift */,
+				470578A7281068FD00852F32 /* Game.swift */,
+				470578A928106A8A00852F32 /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4705789A28102AD200852F32 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				47A1EB412809F063005DC545 /* PlayerCard.swift */,
+				47A1EB43280A5433005DC545 /* PlayerCardMini.swift */,
+				47B3BE77280B6BA8004A0FF6 /* AllPlayersCard.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		4705789B28102ADD00852F32 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				47FE611D280E3D8000620DEC /* LargeGameCard.swift */,
+				4747B15D280F21D200D25E8B /* LargeCardGame2.swift */,
+				478C979B280F8EA7001BFC06 /* NextGameCardEven.swift */,
+				478C979D280F9611001BFC06 /* NextGameCardOdd.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		470578A2281054F800852F32 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				470578A32810551700852F32 /* PlayerCardsViewModel.swift */,
+				470578A5281068C100852F32 /* GamesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4760391F2808FD76003B587C = {
+			isa = PBXGroup;
+			children = (
+				4760392A2808FD76003B587C /* CLTFanC */,
+				476039292808FD76003B587C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		476039292808FD76003B587C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				476039282808FD76003B587C /* CLTFanC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4760392A2808FD76003B587C /* CLTFanC */ = {
+			isa = PBXGroup;
+			children = (
+				4760392B2808FD76003B587C /* CLTFanCApp.swift */,
+				4760392D2808FD76003B587C /* ContentView.swift */,
+				470578A2281054F800852F32 /* ViewModels */,
+				4705789928102AB300852F32 /* Models */,
+				4705789828102AA600852F32 /* Views */,
+				47FE611C280E35E800620DEC /* Info.plist */,
+				4705788D28101D8400852F32 /* GoogleService-Info.plist */,
+				47FE6119280E35A000620DEC /* Font */,
+				4760392F2808FD76003B587C /* Assets.xcassets */,
+				476039312808FD76003B587C /* Preview Content */,
+			);
+			path = CLTFanC;
+			sourceTree = "<group>";
+		};
+		476039312808FD76003B587C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				476039322808FD76003B587C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47FE6119280E35A000620DEC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		476039272808FD76003B587C /* CLTFanC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476039362808FD76003B587C /* Build configuration list for PBXNativeTarget "CLTFanC" */;
+			buildPhases = (
+				476039242808FD76003B587C /* Sources */,
+				476039252808FD76003B587C /* Frameworks */,
+				476039262808FD76003B587C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLTFanC;
+			packageProductDependencies = (
+				4705789028101E8D00852F32 /* FirebaseAnalytics */,
+				4705789228101E8D00852F32 /* FirebaseAuth */,
+				4705789428101E8D00852F32 /* FirebaseFirestore */,
+				4705789628101E8D00852F32 /* FirebaseStorage */,
+			);
+			productName = CLTFanC;
+			productReference = 476039282808FD76003B587C /* CLTFanC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		476039202808FD76003B587C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					476039272808FD76003B587C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 476039232808FD76003B587C /* Build configuration list for PBXProject "CLTFanC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4760391F2808FD76003B587C;
+			packageReferences = (
+				4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 476039292808FD76003B587C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				476039272808FD76003B587C /* CLTFanC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		476039262808FD76003B587C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FE611B280E35BF00620DEC /* Albertus Nova Bold.otf in Resources */,
+				4705788E28101D8400852F32 /* GoogleService-Info.plist in Resources */,
+				476039332808FD76003B587C /* Preview Assets.xcassets in Resources */,
+				476039302808FD76003B587C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		476039242808FD76003B587C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				478C979E280F9611001BFC06 /* NextGameCardOdd.swift in Sources */,
+				478C979C280F8EA7001BFC06 /* NextGameCardEven.swift in Sources */,
+				470578AA28106A8A00852F32 /* Team.swift in Sources */,
+				4760392E2808FD76003B587C /* ContentView.swift in Sources */,
+				470578A8281068FD00852F32 /* Game.swift in Sources */,
+				470578A42810551700852F32 /* PlayerCardsViewModel.swift in Sources */,
+				4760392C2808FD76003B587C /* CLTFanCApp.swift in Sources */,
+				47A1EB422809F063005DC545 /* PlayerCard.swift in Sources */,
+				47FE611E280E3D8000620DEC /* LargeGameCard.swift in Sources */,
+				47B3BE78280B6BA8004A0FF6 /* AllPlayersCard.swift in Sources */,
+				470578A6281068C100852F32 /* GamesViewModel.swift in Sources */,
+				4747B15E280F21D200D25E8B /* LargeCardGame2.swift in Sources */,
+				470578A128102B9D00852F32 /* Player.swift in Sources */,
+				47A1EB44280A5433005DC545 /* PlayerCardMini.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		476039342808FD76003B587C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		476039352808FD76003B587C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		476039372808FD76003B587C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CLTFanC/Preview Content\"";
+				DEVELOPMENT_TEAM = 37M9WYPH3S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CLTFanC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos-delcarpio.CLTFanC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		476039382808FD76003B587C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CLTFanC/Preview Content\"";
+				DEVELOPMENT_TEAM = 37M9WYPH3S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CLTFanC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos-delcarpio.CLTFanC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		476039232808FD76003B587C /* Build configuration list for PBXProject "CLTFanC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476039342808FD76003B587C /* Debug */,
+				476039352808FD76003B587C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476039362808FD76003B587C /* Build configuration list for PBXNativeTarget "CLTFanC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476039372808FD76003B587C /* Debug */,
+				476039382808FD76003B587C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4705789028101E8D00852F32 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4705789228101E8D00852F32 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4705789428101E8D00852F32 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4705789628101E8D00852F32 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 476039202808FD76003B587C /* Project object */;
+}
