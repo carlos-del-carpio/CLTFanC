@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Player: ObservableObject {
     var firstName: String
@@ -16,6 +17,7 @@ class Player: ObservableObject {
     var primaryPositionAbv: String
     var primaryPosition: String
     var currentMVP: Bool
+    var image: UIImage
     
     
     init(data: [String : Any]) {
@@ -27,5 +29,6 @@ class Player: ObservableObject {
         self.primaryPositionAbv = data["primaryPositionAbv"] as? String ?? ""
         self.primaryPosition = data["primaryPosition"] as? String ?? ""
         self.currentMVP = data["currentMVP"] as? Bool ?? false
+        self.image = UIImage(named: "crest")!
     }
 }

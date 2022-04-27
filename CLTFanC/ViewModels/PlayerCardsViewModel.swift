@@ -18,22 +18,29 @@ extension ContentView {
         func getPlayers() {
             let db = Firestore.firestore()
             
-            db.collection("players").getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        let data = document.data()
-                        self.players.append(Player(data: data))
-                    }
-                    
-                    self.getPlayerCards()
+            db.collection("players").addSnapshotListener { querySnapshot, error in
+                guard let query = querySnapshot else {
+                    print("error fetching query: \(String(describing: error))")
+                    return
                 }
+                
+                let documents = query.documents
+                self.players.removeAll()
+                
+                for document in documents {
+                    let data = document.data()
+                    self.players.append(Player(data: data))
+                }
+
+                self.getPlayerCards()
             }
         }
         
         
         func getPlayerCards() {
+            self.playerCards.removeAll()
+            self.playerCardsMini.removeAll()
+            
             for player in players {
                 let newPlayerCard = PlayerCard(player: player)
                 let newPlayerCardMini = PlayerCardMini(player: player)

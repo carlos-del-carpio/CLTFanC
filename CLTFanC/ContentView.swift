@@ -7,7 +7,9 @@ import Firebase
 
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @StateObject private var playersViewModel = PlayerCardsViewModel()
+    @StateObject private var gamesViewModel = GamesViewModel()
     
     init() {
         UIScrollView.appearance().bounces = false
@@ -15,34 +17,31 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            background
-            
             VStack {
-                Text("Next Game")
+                if (gamesViewModel.isGameDay) { GameDayBanner() }
+                
+                Text("Next Games")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.white)
                     .padding()
                     .frame(width: UIScreen.main.bounds.width, alignment: .leading)
                 
-                LargeGameCard2()
+                LargeGameCard()
                 
-                ScrollView (.horizontal, showsIndicators: false) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        NextGameCardEven(location: "A", matchDate: "APR 23 21:00", matchTeams: "COL v CLT").padding(.trailing, 6) 
-                        NextGameCardEven(location: "A", matchDate: "APR 30 19:30", matchTeams: "ORL v CLT").padding(.trailing, 6)
-                        NextGameCardEven(location: "H", matchDate: "MAY 07 15:30", matchTeams: "CLT v MIA").padding(.trailing, 6)
-                        NextGameCardEven(location: "H", matchDate: "MAY 14 19:00", matchTeams: "CLT v MON").padding(.trailing, 6)
-                        NextGameCardEven(location: "H", matchDate: "MAY 22 17:00", matchTeams: "CLT v VAN").padding(.trailing, 6)
-                        NextGameCardEven(location: "A", matchDate: "MAY 29 21:30", matchTeams: "SEA v CLT").padding(.trailing, 6)
+                        ForEach(gamesViewModel.gameTiles, id: \.id) { gameTile in
+                            gameTile
+                        }
+                        
+                        viewFullSchedule
                     }
                     .padding()
                 }
                 
-                Text("The Squad")
+                Text("Squad")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.white)
                     .padding(.leading)
                     .frame(width: UIScreen.main.bounds.width, alignment: .leading)
                 
@@ -51,9 +50,10 @@ struct ContentView: View {
                         ForEach(playersViewModel.playerCards, id: \.id) { playerCard in
                             playerCard
                         }
+                        viewFullSquad
                     }
                 }
-                .cornerRadius(10)
+                .cornerRadius(20)
                 .padding(.horizontal)
                 
                 
@@ -71,31 +71,52 @@ struct ContentView: View {
                 .cornerRadius(10)
                 .padding(.horizontal)
                     
-                
                 Spacer()
             }
         }
     }
     
-    var background: some View {
-        ZStack {
-            RadialGradient(colors: [Color("CLTBlue"), .black], center: .center, startRadius: 0, endRadius: 360)
-                .ignoresSafeArea(.all)
-            
-            Image("crest")
-                .resizable()
-                .scaledToFit()
-                .opacity(0.25)
+    var viewFullSchedule: some View {
+        RoundedRectangle(cornerRadius: 15)
+            .stroke(Color("primary"), lineWidth: 2)
+            .frame(width: 120, height:60)
+            .foregroundColor(Color("secondary"))
+            .overlay(
+                HStack {
+                    Text("Schedule")
+                        .font(.body)
+                        .fontWeight(.bold)
+                    
+                    Image(systemName: "chevron.compact.right")
+                }
+            )
+    }
+    
+    var viewFullSquad: some View {
+        RoundedRectangle(cornerRadius: 20)
+            .strokeBorder(Color("primary"), lineWidth: 4)
+            .frame(width: 200, height: 200)
+            .overlay(
+                VStack {
+                    Image(colorScheme == .light ? "crest" : "crest_mint")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding([.trailing, .leading], 30)
+                    
+                    Text("Squad")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("primary"))
+                }
                 .padding()
-        }
+            )
     }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack {
-            ContentView()
-        }.previewDevice("iPhone 13")
+        ContentView().preferredColorScheme(.dark)
+        ContentView().preferredColorScheme(.light)
     }
 }

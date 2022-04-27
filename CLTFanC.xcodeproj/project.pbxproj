@@ -7,51 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4705788E28101D8400852F32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4705788D28101D8400852F32 /* GoogleService-Info.plist */; };
-		4705789128101E8D00852F32 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789028101E8D00852F32 /* FirebaseAnalytics */; };
-		4705789328101E8D00852F32 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789228101E8D00852F32 /* FirebaseAuth */; };
-		4705789528101E8D00852F32 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789428101E8D00852F32 /* FirebaseFirestore */; };
-		4705789728101E8D00852F32 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4705789628101E8D00852F32 /* FirebaseStorage */; };
-		470578A128102B9D00852F32 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A028102B9D00852F32 /* Player.swift */; };
-		470578A42810551700852F32 /* PlayerCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A32810551700852F32 /* PlayerCardsViewModel.swift */; };
-		470578A6281068C100852F32 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A5281068C100852F32 /* GamesViewModel.swift */; };
-		470578A8281068FD00852F32 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A7281068FD00852F32 /* Game.swift */; };
-		470578AA28106A8A00852F32 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470578A928106A8A00852F32 /* Team.swift */; };
-		4747B15E280F21D200D25E8B /* LargeCardGame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747B15D280F21D200D25E8B /* LargeCardGame2.swift */; };
+		47197788281217360058BD4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47197787281217360058BD4A /* GoogleService-Info.plist */; };
+		4719778C281220BB0058BD4A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4719778B281220BB0058BD4A /* FirebaseAnalytics */; };
+		4719778E281220BB0058BD4A /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4719778D281220BB0058BD4A /* FirebaseAnalyticsSwift-Beta */; };
+		47197790281220BB0058BD4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4719778F281220BB0058BD4A /* FirebaseAuth */; };
+		47197792281220BB0058BD4A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 47197791281220BB0058BD4A /* FirebaseDatabase */; };
+		47197794281220BB0058BD4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 47197793281220BB0058BD4A /* FirebaseFirestore */; };
+		47197796281220BB0058BD4A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 47197795281220BB0058BD4A /* FirebaseFirestoreSwift-Beta */; };
+		47197798281220BB0058BD4A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 47197797281220BB0058BD4A /* FirebaseStorage */; };
+		4719779A281220BB0058BD4A /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 47197799281220BB0058BD4A /* FirebaseStorageSwift-Beta */; };
+		4719779C2812215A0058BD4A /* PlayerCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779B2812215A0058BD4A /* PlayerCardsViewModel.swift */; };
+		4719779E2812216F0058BD4A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779D2812216F0058BD4A /* Player.swift */; };
+		471977A0281221C50058BD4A /* LargeCardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779F281221C50058BD4A /* LargeCardGame.swift */; };
+		471977A2281222030058BD4A /* PlayerCardMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977A1281222030058BD4A /* PlayerCardMini.swift */; };
+		471977A7281225EB0058BD4A /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977A6281225EB0058BD4A /* PlayerCard.swift */; };
+		471977A92812C72C0058BD4A /* NextGameTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977A82812C72C0058BD4A /* NextGameTile.swift */; };
+		471977AB2813957F0058BD4A /* GameDayBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977AA2813957E0058BD4A /* GameDayBanner.swift */; };
+		471977AD28139A9C0058BD4A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977AC28139A9C0058BD4A /* Game.swift */; };
+		471977AF28139F4F0058BD4A /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977AE28139F4F0058BD4A /* GamesViewModel.swift */; };
+		471977B22818217A0058BD4A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 471977B12818217A0058BD4A /* SDWebImageSwiftUI */; };
+		471977B4281848A40058BD4A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977B3281848A40058BD4A /* Team.swift */; };
 		4760392C2808FD76003B587C /* CLTFanCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760392B2808FD76003B587C /* CLTFanCApp.swift */; };
 		4760392E2808FD76003B587C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760392D2808FD76003B587C /* ContentView.swift */; };
 		476039302808FD76003B587C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4760392F2808FD76003B587C /* Assets.xcassets */; };
 		476039332808FD76003B587C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476039322808FD76003B587C /* Preview Assets.xcassets */; };
-		478C979C280F8EA7001BFC06 /* NextGameCardEven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C979B280F8EA7001BFC06 /* NextGameCardEven.swift */; };
-		478C979E280F9611001BFC06 /* NextGameCardOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C979D280F9611001BFC06 /* NextGameCardOdd.swift */; };
-		47A1EB422809F063005DC545 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1EB412809F063005DC545 /* PlayerCard.swift */; };
-		47A1EB44280A5433005DC545 /* PlayerCardMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1EB43280A5433005DC545 /* PlayerCardMini.swift */; };
-		47B3BE78280B6BA8004A0FF6 /* AllPlayersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B3BE77280B6BA8004A0FF6 /* AllPlayersCard.swift */; };
 		47FE611B280E35BF00620DEC /* Albertus Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */; };
-		47FE611E280E3D8000620DEC /* LargeGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE611D280E3D8000620DEC /* LargeGameCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4705788D28101D8400852F32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		470578A028102B9D00852F32 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		470578A32810551700852F32 /* PlayerCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsViewModel.swift; sourceTree = "<group>"; };
-		470578A5281068C100852F32 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
-		470578A7281068FD00852F32 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		470578A928106A8A00852F32 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		4747B15D280F21D200D25E8B /* LargeCardGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCardGame2.swift; sourceTree = "<group>"; };
+		47197787281217360058BD4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4719779B2812215A0058BD4A /* PlayerCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsViewModel.swift; sourceTree = "<group>"; };
+		4719779D2812216F0058BD4A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4719779F281221C50058BD4A /* LargeCardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCardGame.swift; sourceTree = "<group>"; };
+		471977A1281222030058BD4A /* PlayerCardMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardMini.swift; sourceTree = "<group>"; };
+		471977A6281225EB0058BD4A /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
+		471977A82812C72C0058BD4A /* NextGameTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameTile.swift; sourceTree = "<group>"; };
+		471977AA2813957E0058BD4A /* GameDayBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDayBanner.swift; sourceTree = "<group>"; };
+		471977AC28139A9C0058BD4A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		471977AE28139F4F0058BD4A /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		471977B3281848A40058BD4A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		476039282808FD76003B587C /* CLTFanC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLTFanC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4760392B2808FD76003B587C /* CLTFanCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTFanCApp.swift; sourceTree = "<group>"; };
 		4760392D2808FD76003B587C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4760392F2808FD76003B587C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		476039322808FD76003B587C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		478C979B280F8EA7001BFC06 /* NextGameCardEven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameCardEven.swift; sourceTree = "<group>"; };
-		478C979D280F9611001BFC06 /* NextGameCardOdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameCardOdd.swift; sourceTree = "<group>"; };
-		47A1EB412809F063005DC545 /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
-		47A1EB43280A5433005DC545 /* PlayerCardMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardMini.swift; sourceTree = "<group>"; };
-		47B3BE77280B6BA8004A0FF6 /* AllPlayersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayersCard.swift; sourceTree = "<group>"; };
 		47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albertus Nova Bold.otf"; sourceTree = "<group>"; };
 		47FE611C280E35E800620DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		47FE611D280E3D8000620DEC /* LargeGameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeGameCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,61 +60,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4705789128101E8D00852F32 /* FirebaseAnalytics in Frameworks */,
-				4705789728101E8D00852F32 /* FirebaseStorage in Frameworks */,
-				4705789328101E8D00852F32 /* FirebaseAuth in Frameworks */,
-				4705789528101E8D00852F32 /* FirebaseFirestore in Frameworks */,
+				4719778E281220BB0058BD4A /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				47197790281220BB0058BD4A /* FirebaseAuth in Frameworks */,
+				47197792281220BB0058BD4A /* FirebaseDatabase in Frameworks */,
+				471977B22818217A0058BD4A /* SDWebImageSwiftUI in Frameworks */,
+				47197796281220BB0058BD4A /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				47197798281220BB0058BD4A /* FirebaseStorage in Frameworks */,
+				4719779A281220BB0058BD4A /* FirebaseStorageSwift-Beta in Frameworks */,
+				47197794281220BB0058BD4A /* FirebaseFirestore in Frameworks */,
+				4719778C281220BB0058BD4A /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4705789828102AA600852F32 /* Views */ = {
+		471977A3281222D10058BD4A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4705789B28102ADD00852F32 /* Games */,
-				4705789A28102AD200852F32 /* Players */,
+				471977A1281222030058BD4A /* PlayerCardMini.swift */,
+				471977AA2813957E0058BD4A /* GameDayBanner.swift */,
+				471977A82812C72C0058BD4A /* NextGameTile.swift */,
+				4719779F281221C50058BD4A /* LargeCardGame.swift */,
+				471977A6281225EB0058BD4A /* PlayerCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4705789928102AB300852F32 /* Models */ = {
+		471977A4281225790058BD4A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				470578A028102B9D00852F32 /* Player.swift */,
-				470578A7281068FD00852F32 /* Game.swift */,
-				470578A928106A8A00852F32 /* Team.swift */,
+				4719779D2812216F0058BD4A /* Player.swift */,
+				471977AC28139A9C0058BD4A /* Game.swift */,
+				471977B3281848A40058BD4A /* Team.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4705789A28102AD200852F32 /* Players */ = {
+		471977A5281225800058BD4A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				47A1EB412809F063005DC545 /* PlayerCard.swift */,
-				47A1EB43280A5433005DC545 /* PlayerCardMini.swift */,
-				47B3BE77280B6BA8004A0FF6 /* AllPlayersCard.swift */,
-			);
-			path = Players;
-			sourceTree = "<group>";
-		};
-		4705789B28102ADD00852F32 /* Games */ = {
-			isa = PBXGroup;
-			children = (
-				47FE611D280E3D8000620DEC /* LargeGameCard.swift */,
-				4747B15D280F21D200D25E8B /* LargeCardGame2.swift */,
-				478C979B280F8EA7001BFC06 /* NextGameCardEven.swift */,
-				478C979D280F9611001BFC06 /* NextGameCardOdd.swift */,
-			);
-			path = Games;
-			sourceTree = "<group>";
-		};
-		470578A2281054F800852F32 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				470578A32810551700852F32 /* PlayerCardsViewModel.swift */,
-				470578A5281068C100852F32 /* GamesViewModel.swift */,
+				4719779B2812215A0058BD4A /* PlayerCardsViewModel.swift */,
+				471977AE28139F4F0058BD4A /* GamesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -139,11 +127,11 @@
 			children = (
 				4760392B2808FD76003B587C /* CLTFanCApp.swift */,
 				4760392D2808FD76003B587C /* ContentView.swift */,
-				470578A2281054F800852F32 /* ViewModels */,
-				4705789928102AB300852F32 /* Models */,
-				4705789828102AA600852F32 /* Views */,
+				471977A5281225800058BD4A /* ViewModels */,
+				471977A4281225790058BD4A /* Models */,
+				471977A3281222D10058BD4A /* Views */,
 				47FE611C280E35E800620DEC /* Info.plist */,
-				4705788D28101D8400852F32 /* GoogleService-Info.plist */,
+				47197787281217360058BD4A /* GoogleService-Info.plist */,
 				47FE6119280E35A000620DEC /* Font */,
 				4760392F2808FD76003B587C /* Assets.xcassets */,
 				476039312808FD76003B587C /* Preview Content */,
@@ -184,10 +172,15 @@
 			);
 			name = CLTFanC;
 			packageProductDependencies = (
-				4705789028101E8D00852F32 /* FirebaseAnalytics */,
-				4705789228101E8D00852F32 /* FirebaseAuth */,
-				4705789428101E8D00852F32 /* FirebaseFirestore */,
-				4705789628101E8D00852F32 /* FirebaseStorage */,
+				4719778B281220BB0058BD4A /* FirebaseAnalytics */,
+				4719778D281220BB0058BD4A /* FirebaseAnalyticsSwift-Beta */,
+				4719778F281220BB0058BD4A /* FirebaseAuth */,
+				47197791281220BB0058BD4A /* FirebaseDatabase */,
+				47197793281220BB0058BD4A /* FirebaseFirestore */,
+				47197795281220BB0058BD4A /* FirebaseFirestoreSwift-Beta */,
+				47197797281220BB0058BD4A /* FirebaseStorage */,
+				47197799281220BB0058BD4A /* FirebaseStorageSwift-Beta */,
+				471977B12818217A0058BD4A /* SDWebImageSwiftUI */,
 			);
 			productName = CLTFanC;
 			productReference = 476039282808FD76003B587C /* CLTFanC.app */;
@@ -218,7 +211,8 @@
 			);
 			mainGroup = 4760391F2808FD76003B587C;
 			packageReferences = (
-				4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				471977B0281821790058BD4A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 476039292808FD76003B587C /* Products */;
 			projectDirPath = "";
@@ -235,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FE611B280E35BF00620DEC /* Albertus Nova Bold.otf in Resources */,
-				4705788E28101D8400852F32 /* GoogleService-Info.plist in Resources */,
+				47197788281217360058BD4A /* GoogleService-Info.plist in Resources */,
 				476039332808FD76003B587C /* Preview Assets.xcassets in Resources */,
 				476039302808FD76003B587C /* Assets.xcassets in Resources */,
 			);
@@ -248,20 +242,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478C979E280F9611001BFC06 /* NextGameCardOdd.swift in Sources */,
-				478C979C280F8EA7001BFC06 /* NextGameCardEven.swift in Sources */,
-				470578AA28106A8A00852F32 /* Team.swift in Sources */,
+				471977B4281848A40058BD4A /* Team.swift in Sources */,
+				471977AB2813957F0058BD4A /* GameDayBanner.swift in Sources */,
+				471977AD28139A9C0058BD4A /* Game.swift in Sources */,
+				471977A0281221C50058BD4A /* LargeCardGame.swift in Sources */,
+				471977A2281222030058BD4A /* PlayerCardMini.swift in Sources */,
+				4719779E2812216F0058BD4A /* Player.swift in Sources */,
+				471977AF28139F4F0058BD4A /* GamesViewModel.swift in Sources */,
 				4760392E2808FD76003B587C /* ContentView.swift in Sources */,
-				470578A8281068FD00852F32 /* Game.swift in Sources */,
-				470578A42810551700852F32 /* PlayerCardsViewModel.swift in Sources */,
+				471977A92812C72C0058BD4A /* NextGameTile.swift in Sources */,
 				4760392C2808FD76003B587C /* CLTFanCApp.swift in Sources */,
-				47A1EB422809F063005DC545 /* PlayerCard.swift in Sources */,
-				47FE611E280E3D8000620DEC /* LargeGameCard.swift in Sources */,
-				47B3BE78280B6BA8004A0FF6 /* AllPlayersCard.swift in Sources */,
-				470578A6281068C100852F32 /* GamesViewModel.swift in Sources */,
-				4747B15E280F21D200D25E8B /* LargeCardGame2.swift in Sources */,
-				470578A128102B9D00852F32 /* Player.swift in Sources */,
-				47A1EB44280A5433005DC545 /* PlayerCardMini.swift in Sources */,
+				471977A7281225EB0058BD4A /* PlayerCard.swift in Sources */,
+				4719779C2812215A0058BD4A /* PlayerCardsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +462,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -478,28 +470,61 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		471977B0281821790058BD4A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4705789028101E8D00852F32 /* FirebaseAnalytics */ = {
+		4719778B281220BB0058BD4A /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		4705789228101E8D00852F32 /* FirebaseAuth */ = {
+		4719778D281220BB0058BD4A /* FirebaseAnalyticsSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		4719778F281220BB0058BD4A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		4705789428101E8D00852F32 /* FirebaseFirestore */ = {
+		47197791281220BB0058BD4A /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		47197793281220BB0058BD4A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		4705789628101E8D00852F32 /* FirebaseStorage */ = {
+		47197795281220BB0058BD4A /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4705788F28101E8D00852F32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		47197797281220BB0058BD4A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		47197799281220BB0058BD4A /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4719778A281220BB0058BD4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		471977B12818217A0058BD4A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 471977B0281821790058BD4A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
