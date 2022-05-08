@@ -8,71 +8,76 @@ import Firebase
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
-    @StateObject private var playersViewModel = PlayerCardsViewModel()
-    @StateObject private var gamesViewModel = GamesViewModel()
+    @EnvironmentObject var gamesViewModel: GamesViewModel
+    @StateObject var playersViewModel = PlayerCardsViewModel()
     
     init() {
         UIScrollView.appearance().bounces = false
-    }
+}
     
     var body: some View {
-        ZStack {
-            VStack {
-                if (gamesViewModel.isGameDay) { GameDayBanner() }
-                
-                Text("Next Games")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .padding()
-                    .frame(width: UIScreen.main.bounds.width, alignment: .leading)
-                
-                LargeGameCard()
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(gamesViewModel.gameTiles, id: \.id) { gameTile in
-                            gameTile
-                        }
-                        
-                        viewFullSchedule
-                    }
-                    .padding()
-                }
-                
-                Text("Squad")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .padding(.leading)
-                    .frame(width: UIScreen.main.bounds.width, alignment: .leading)
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(playersViewModel.playerCards, id: \.id) { playerCard in
-                            playerCard
-                        }
-                        viewFullSquad
-                    }
-                }
-                .cornerRadius(20)
-                .padding(.horizontal)
-                
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
-                            playerCardMini
-                        }
-                        
-                        ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
-                            playerCardMini
-                        }
-                    }
-                }
-                .cornerRadius(10)
-                .padding(.horizontal)
+        NavigationView {
+            ZStack {
+                VStack {
+//                    if (gamesViewModel.isGameDay) { GameDayBanner() }
                     
-                Spacer()
+                    Text("Next Games")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .padding()
+                        .frame(width: UIScreen.main.bounds.width, alignment: .leading)
+                    
+                    LargeGameCard()
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(gamesViewModel.games, id: \.id) { game in
+                                if game.gameDate > Calendar.current.startOfDay(for: Date.now) {
+                                    NextGameTile(matchDate: game.gameDateString, matchTeams: game.matchTeams)
+                                }
+                            }
+                            
+                            viewFullSchedule
+                        }
+                        .padding()
+                    }
+                    
+                    Text("Captains")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .padding(.leading)
+                        .frame(width: UIScreen.main.bounds.width, alignment: .leading)
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(playersViewModel.playerCards, id: \.id) { playerCard in
+                                playerCard
+                            }
+                            NavigationLink(destination: SquadView(), label: { viewFullSquad })
+                        }
+                    }
+                    .cornerRadius(20)
+                    .padding(.horizontal)
+                    
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
+                                playerCardMini
+                            }
+                            
+                            ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
+                                playerCardMini
+                            }
+                        }
+                    }
+                    .cornerRadius(10)
+                    .padding(.horizontal)
+                        
+                    Spacer()
+                }
             }
+            .navigationBarHidden(true)
         }
     }
     
@@ -117,6 +122,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().preferredColorScheme(.dark)
+            .environmentObject(GamesViewModel())
         ContentView().preferredColorScheme(.light)
+            .environmentObject(GamesViewModel())
     }
 }

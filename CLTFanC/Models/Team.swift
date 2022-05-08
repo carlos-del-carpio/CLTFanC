@@ -1,27 +1,13 @@
-//
 //  Team.swift
 //  CLTFanC
-//
 //  Created by Carlos Del Carpio on 4/26/22.
-//
 
 import Foundation
-import Firebase
+import FirebaseFirestoreSwift
 
-class Team: ObservableObject {
+struct Team: Codable, Identifiable {
+    @DocumentID var id: String?
     var teamName: String
-    var teamNameAvb: String
+    var teamNameAbv: String
     var teamNameShort: String
-    
-    init(data: [String : Any]) {
-        self.teamName = data["teamName"] as? String ?? "DEF"
-        self.teamNameAvb = data["teamNameAvb"] as? String ?? "DEF"
-        self.teamNameShort = data["teamNameShort"] as? String ?? "DEF"
-    }
-    
-    init() {
-        self.teamName = "DEF"
-        self.teamNameAvb = "DEF"
-        self.teamNameShort = "DEF"
-    }
  }

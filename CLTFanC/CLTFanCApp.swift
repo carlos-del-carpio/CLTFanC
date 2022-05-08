@@ -7,6 +7,8 @@ import Firebase
 
 @main
 struct CLTFanCApp: App {
+    @StateObject var gamesViewModel: GamesViewModel = GamesViewModel()
+    
     init() {
         FirebaseApp.configure()
     }
@@ -14,6 +16,7 @@ struct CLTFanCApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(gamesViewModel)
         }
     }
 }
