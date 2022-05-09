@@ -2,11 +2,18 @@
 //  CLTFanC
 //  Created by Carlos Del Carpio on 4/18/22.
 import SwiftUI
+import Firebase
+import FirebaseStorage
+import SDWebImageSwiftUI
 
 
 struct LargeGameCard: View {
     @Environment(\.colorScheme) var colorScheme
+    @State private var awayTeamCrestImageURL = URL(string: "")
+    @State private var cltCrestImageURL = URL(string: "")
+    var game: Game?
     var screenWidth = UIScreen.main.bounds.width - 32
+    
     
     var body: some View {
         ZStack {
@@ -36,48 +43,72 @@ struct LargeGameCard: View {
                 .scaledToFit()
                 .padding([.leading])
 
-            Text("CLT")
+            Text("\(game!.awayTeam)")
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.heavy)
             
-            Text("at")
+            Text("vs")
                 .font(.headline)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            Text("GRE")
+            Text("\(game!.homeTeam)")
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.heavy)
             
-            Image("greenville-crest")
+            WebImage(url: awayTeamCrestImageURL)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding([.trailing])
                 .foregroundColor(.black)
+                .onAppear(perform: loadAwayImageFromFirebase)
         }
         .padding(.top)
     }
     
     
     var gameLocation : some View {
-        Text("Triumph Stadium at Legacy Early College")
+        Text("\(game!.stadium)")
             .fontWeight(.bold)
             .font(.caption)
     }
     
     
     var gameDate : some View {
-        Text("April 20 19:00")
+        Text("\(game!.gameDateStringLong)")
             .font(.caption2)
             .padding(.bottom)
+    }
+    
+    
+    func loadAwayImageFromFirebase()  {
+        let storage = Storage.storage().reference().child("/crests/\(game!.oppositeTeamCrest).png")
+        
+        storage.downloadURL { url, error in
+            if let error = error {
+                print("\(error)")
+                return
+            }
+            
+            self.awayTeamCrestImageURL = url!
+        }
     }
 }
 
 
 struct LargeGameCard_Previews: PreviewProvider {
+    static func getGameDate() -> Game {
+        let gameDate = "May 11, 2022 18:30"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd, yyyy HH:mm"
+        let date = dateFormatter.date(from: gameDate)!
+        
+        return Game(gameDate: date, stadium: "City Stadium", homeTeam: "RIC", awayTeam: "CLT", oppositeTeamCrest: "richmond_kickers_crest")
+    }
+    
     static var previews: some View {
-        LargeGameCard()
+        LargeGameCard(game: getGameDate())
     }
 }

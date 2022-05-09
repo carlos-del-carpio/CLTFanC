@@ -27,7 +27,9 @@ struct ContentView: View {
                         .padding()
                         .frame(width: UIScreen.main.bounds.width, alignment: .leading)
                     
-                    LargeGameCard()
+                    if gamesViewModel.getNextGame() != nil {
+                        LargeGameCard(game: gamesViewModel.getNextGame())
+                    }
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {

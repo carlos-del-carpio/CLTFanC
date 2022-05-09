@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import UIKit
 
-class Player: ObservableObject {
+struct Player {
     var firstName: String
     var lastName: String
     var middleName: String
@@ -17,18 +16,5 @@ class Player: ObservableObject {
     var primaryPositionAbv: String
     var primaryPosition: String
     var currentMVP: Bool
-    var image: UIImage
-    
-    
-    init(data: [String : Any]) {
-        self.firstName = data["firstName"] as? String ?? ""
-        self.lastName = data["lastName"] as? String ?? ""
-        self.middleName = data["middleName"] as? String ?? ""
-        self.imageName = data["imageName"] as? String ?? ""
-        self.kitNumber = data["kitNumber"] as? Int ?? -1
-        self.primaryPositionAbv = data["primaryPositionAbv"] as? String ?? ""
-        self.primaryPosition = data["primaryPosition"] as? String ?? ""
-        self.currentMVP = data["currentMVP"] as? Bool ?? false
-        self.image = UIImage(named: "crest")!
-    }
+    var image: String
 }

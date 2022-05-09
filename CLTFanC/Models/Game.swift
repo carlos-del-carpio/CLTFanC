@@ -5,6 +5,7 @@
 import Foundation
 import Firebase
 import SwiftUI
+import FirebaseStorage
 import FirebaseFirestoreSwift
 
 struct Game: Codable {
@@ -13,6 +14,8 @@ struct Game: Codable {
     var stadium: String
     var homeTeam: String
     var awayTeam: String
+    var oppositeTeamCrest: String
+    
     
     var gameDateString: String {
         let trueDate = Date(timeIntervalSince1970: self.gameDate.timeIntervalSince1970)
@@ -22,11 +25,40 @@ struct Game: Codable {
         return dateFormatter.string(from: trueDate)
     }
     
-    var matchTeams: String {
-        if homeTeam == "CLT" {
-            return "\(homeTeam) vs \(awayTeam)"
-        }
+    
+    var gameDateStringLong: String {
+        let trueDate = Date(timeIntervalSince1970: self.gameDate.timeIntervalSince1970)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd HH:mm"
         
-        return "\(awayTeam) @ \(homeTeam)"
+        return dateFormatter.string(from: trueDate)
     }
+    
+    
+    var matchTeams: String {
+        return "\(homeTeam) vs \(awayTeam)"
+    }
+    
+    
+    func getCLTCrest(colorScheme: ColorScheme) {
+        let cltCrest = colorScheme == .light ? "charlotte_fc_crest" : "charlotte_fc_crest_mint"
+        let storage = Storage.storage().reference().child("/crests/\(cltCrest).png")
+    }
+    
+    
+    
+    
+//    func loadCLTCrestFromFirebase()  {
+//        let cltCrest = colorScheme == .light ? "charlotte_fc_crest" : "charlotte_fc_crest_mint"
+//        let storage = Storage.storage().reference().child("/crests/\(cltCrest).png")
+//
+//        storage.downloadURL { url, error in
+//            if let error = error {
+//                print("\(error)")
+//                return
+//            }
+//
+//            self.cltCrestImageURL = url!
+//        }
+//    }
 }

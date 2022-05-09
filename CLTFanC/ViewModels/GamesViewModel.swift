@@ -43,4 +43,17 @@ class GamesViewModel: ObservableObject {
             self.games.sort { $0.gameDate < $1.gameDate }
         }
     }
+    
+    func getNextGame() -> Game? {
+        var returnGame: Game?
+        
+        for game in games {
+            if game.gameDate > Calendar.current.startOfDay(for: Date.now) {
+                returnGame = game
+                break
+            }
+        }
+        
+        return returnGame
+    }
 }

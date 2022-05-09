@@ -22,38 +22,30 @@ struct SquadView: View {
         HStack {
             Image("jordi_alcivar")
                 .resizable()
-//                .background(
-//                    LinearGradient(colors: [Color("secondary"), Color("primary")], startPoint: .toplead, endPoint: .bottom)
-//                )
                 .frame(maxWidth: 80, maxHeight: 80)
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
-//                .offset(x: 16)
-                .padding()
+                .padding(.trailing, 10)
 
             
             VStack (alignment: .leading) {
                 HStack (spacing: 2){
-                    Text("8")
+                    Text("16")
                         .font(.title2)
                         .foregroundColor(Color("primary"))
                         .fontWeight(.black)
                     
-                    Text("Jordi Alcivar")
+                    Text("Andre Shinyashiki")
                         .font(.title2)
                         .foregroundColor(Color("primary"))
                         .fontWeight(.bold)
                 }
                 
-                Text("Ecuador")
-                    .foregroundColor(Color("primary"))
-                    .font(.subheadline)
-             
-                Text("04.22.98 (24)")
+                Text("Midfielder")
                     .foregroundColor(Color("primary"))
                     .font(.subheadline)
                 
-                Text("5'8\" 157lbs")
+                Text("Ecuador")
                     .foregroundColor(Color("primary"))
                     .font(.subheadline)
             }
