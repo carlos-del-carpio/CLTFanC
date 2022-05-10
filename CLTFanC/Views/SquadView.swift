@@ -1,10 +1,6 @@
-//
 //  SquadView.swift
 //  CLTFanC
-//
 //  Created by Carlos Del Carpio on 4/28/22.
-//
-
 import SwiftUI
 
 struct SquadView: View {
@@ -52,10 +48,6 @@ struct SquadView: View {
             
             Spacer()
         }
-//        .background(
-//            //LinearGradient(colors: [Color("primary"), Color("secondary")], startPoint: .topLeading, endPoint: .bottomTrailing)
-//            Color("primary")
-//        )
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 100)
         .cornerRadius(15)
         .padding(.horizontal, 0)

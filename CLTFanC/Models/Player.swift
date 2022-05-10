@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import Firebase
+import SwiftUI
+import FirebaseStorage
+import FirebaseFirestoreSwift
 
-struct Player {
+
+struct Player: Codable {
+    @DocumentID var id: String?
     var firstName: String
     var lastName: String
     var middleName: String
@@ -16,5 +22,6 @@ struct Player {
     var primaryPositionAbv: String
     var primaryPosition: String
     var currentMVP: Bool
-    var image: String
+    var countryOfOrigin: String
+    var captain: Bool
 }

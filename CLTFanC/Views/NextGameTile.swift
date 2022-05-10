@@ -1,10 +1,6 @@
-//
 //  NextGameTile.swift
 //  CLTFanC
-//
 //  Created by Carlos Del Carpio on 4/22/22.
-//
-
 import SwiftUI
 
 struct NextGameTile: View {
@@ -32,6 +28,7 @@ struct NextGameTile: View {
             )
     }
 }
+
 
 struct NextGameTile_Previews: PreviewProvider {
     static var previews: some View {

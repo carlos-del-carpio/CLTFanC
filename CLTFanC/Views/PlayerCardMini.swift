@@ -45,14 +45,15 @@ struct PlayerCardMini: View {
 struct PlayerCardMini_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-            let newPlayer = Player(data: ["firstName" : "Jordi",
-                                          "lastName" : "Alcívar",
-                                          "middleName" : "",
-                                          "imageName" : "jordi_alcivar",
-                                          "kitNumber" : 8,
-                                          "primaryPosition" : "Midfielder",
-                                          "primaryPositionAvb" : "CM",
-                                          "currentMVP" : true])
+//            let newPlayer = Player("firstName" : "Jordi",
+//                                          "lastName" : "Alcívar",
+//                                          "middleName" : "",
+//                                          "imageName" : "jordi_alcivar",
+//                                          "kitNumber" : 8,
+//                                          "primaryPosition" : "Midfielder",
+//                                          "primaryPositionAvb" : "CM",
+//                                          "currentMVP" : true])
+            let newPlayer = Player(firstName: "Jordi", lastName: "Alcívar", middleName: "", imageName: "jordi_alcivar", kitNumber: 8, primaryPositionAbv: "MF", primaryPosition: "Midfielder", currentMVP: false, countryOfOrigin: "Ecuador", captain: false)
             PlayerCardMini(player: newPlayer)
         }
     }

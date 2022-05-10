@@ -1,7 +1,6 @@
 //  PlayerCard.swift
 //  CLTFanC
 //  Created by Carlos Del Carpio on 4/15/22.
-
 import SwiftUI
 import FirebaseStorage
 import SDWebImageSwiftUI
@@ -132,14 +131,7 @@ struct PlayerCard: View {
 
 struct PlayerCard_Previews: PreviewProvider {
     static var previews: some View {
-        let newPlayer = Player(data: ["firstName" : "Jordi",
-                                      "lastName" : "Alcívar",
-                                      "middleName" : "",
-                                      "imageName" : "jordi_alcivar",
-                                      "kitNumber" : 8,
-                                      "primaryPosition" : "Midfielder",
-                                      "primaryPositionAvb" : "CM",
-                                      "currentMVP" : true])
+        let newPlayer = Player(firstName: "Jordi", lastName: "Alcívar", middleName: "", imageName: "jordi_alcivar", kitNumber: 8, primaryPositionAbv: "MF", primaryPosition: "Midfielder", currentMVP: false, countryOfOrigin: "Ecuador", captain: false)
         PlayerCard(player: newPlayer).preferredColorScheme(.dark)
     }
 }
