@@ -44,21 +44,4 @@ struct Game: Codable {
         let cltCrest = colorScheme == .light ? "charlotte_fc_crest" : "charlotte_fc_crest_mint"
         let storage = Storage.storage().reference().child("/crests/\(cltCrest).png")
     }
-    
-    
-    
-    
-//    func loadCLTCrestFromFirebase()  {
-//        let cltCrest = colorScheme == .light ? "charlotte_fc_crest" : "charlotte_fc_crest_mint"
-//        let storage = Storage.storage().reference().child("/crests/\(cltCrest).png")
-//
-//        storage.downloadURL { url, error in
-//            if let error = error {
-//                print("\(error)")
-//                return
-//            }
-//
-//            self.cltCrestImageURL = url!
-//        }
-//    }
 }

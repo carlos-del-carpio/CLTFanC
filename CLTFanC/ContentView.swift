@@ -1,7 +1,6 @@
 //  ContentView.swift
 //  CLTFanC
 //  Created by Carlos Del Carpio on 4/14/22.
-
 import SwiftUI
 import Firebase
 
@@ -19,7 +18,7 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 VStack {
-//                    if (gamesViewModel.isGameDay) { GameDayBanner() }
+                    if (gamesViewModel.isGameDay()) { GameDayBanner() }
                     
                     Text("Next Games")
                         .font(.largeTitle)
@@ -52,8 +51,8 @@ struct ContentView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(playersViewModel.playerCards, id: \.id) { playerCard in
-                                playerCard
+                            ForEach(playersViewModel.players, id: \.id) { player in
+                                PlayerCard(player: player)
                             }
                             NavigationLink(destination: SquadView(), label: { viewFullSquad })
                         }
@@ -62,19 +61,19 @@ struct ContentView: View {
                     .padding(.horizontal)
                     
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
-                                playerCardMini
-                            }
-                            
-                            ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
-                                playerCardMini
-                            }
-                        }
-                    }
-                    .cornerRadius(10)
-                    .padding(.horizontal)
+//                    ScrollView(.horizontal, showsIndicators: false) {
+//                        HStack {
+//                            ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
+//                                playerCardMini
+//                            }
+//                            
+//                            ForEach(playersViewModel.playerCardsMini, id: \.id) { playerCardMini in
+//                                playerCardMini
+//                            }
+//                        }
+//                    }
+//                    .cornerRadius(10)
+//                    .padding(.horizontal)
                         
                     Spacer()
                 }

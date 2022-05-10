@@ -1,7 +1,6 @@
 //  GamesViewModel.swift
 //  CLTFanC
 //  Created by Carlos Del Carpio on 4/22/22.
-
 import Foundation
 import Firebase
 import FirebaseFirestoreSwift
@@ -55,5 +54,18 @@ class GamesViewModel: ObservableObject {
         }
         
         return returnGame
+    }
+    
+    
+    func isGameDay() -> Bool {
+        var returnValue = false
+        
+        for game in games {
+            if Calendar.current.isDateInToday(game.gameDate) {
+                returnValue = true
+            }
+        }
+        
+        return returnValue
     }
 }
