@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47197788281217360058BD4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47197787281217360058BD4A /* GoogleService-Info.plist */; };
-		4719779C2812215A0058BD4A /* PlayerCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779B2812215A0058BD4A /* PlayerCardsViewModel.swift */; };
+		4719779C2812215A0058BD4A /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779B2812215A0058BD4A /* PlayersViewModel.swift */; };
 		4719779E2812216F0058BD4A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779D2812216F0058BD4A /* Player.swift */; };
 		471977A0281221C50058BD4A /* LargeCardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719779F281221C50058BD4A /* LargeCardGame.swift */; };
 		471977A2281222030058BD4A /* PlayerCardMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471977A1281222030058BD4A /* PlayerCardMini.swift */; };
@@ -30,12 +30,14 @@
 		478E887F28260C3200A9F796 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 478E887E28260C3200A9F796 /* FirebaseStorageCombine-Community */; };
 		478E888428260D0500A9F796 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 478E888328260D0500A9F796 /* FirebaseFirestoreSwift */; };
 		478E888A28295B1F00A9F796 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 478E888928295B1F00A9F796 /* SDWebImageSwiftUI */; };
+		478E888C282AF20400A9F796 /* SquadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E888B282AF20400A9F796 /* SquadCell.swift */; };
+		478E888E282C476500A9F796 /* AddPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E888D282C476500A9F796 /* AddPlayer.swift */; };
 		47FE611B280E35BF00620DEC /* Albertus Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47197787281217360058BD4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4719779B2812215A0058BD4A /* PlayerCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsViewModel.swift; sourceTree = "<group>"; };
+		4719779B2812215A0058BD4A /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
 		4719779D2812216F0058BD4A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		4719779F281221C50058BD4A /* LargeCardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCardGame.swift; sourceTree = "<group>"; };
 		471977A1281222030058BD4A /* PlayerCardMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardMini.swift; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		4760392F2808FD76003B587C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		476039322808FD76003B587C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4764C292281AB4540058F462 /* SquadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadView.swift; sourceTree = "<group>"; };
+		478E888B282AF20400A9F796 /* SquadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadCell.swift; sourceTree = "<group>"; };
+		478E888D282C476500A9F796 /* AddPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayer.swift; sourceTree = "<group>"; };
 		47FE611A280E35BF00620DEC /* Albertus Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albertus Nova Bold.otf"; sourceTree = "<group>"; };
 		47FE611C280E35E800620DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4764C292281AB4540058F462 /* SquadView.swift */,
+				478E888B282AF20400A9F796 /* SquadCell.swift */,
 				471977A1281222030058BD4A /* PlayerCardMini.swift */,
 				471977AA2813957E0058BD4A /* GameDayBanner.swift */,
 				471977A82812C72C0058BD4A /* NextGameTile.swift */,
@@ -99,7 +104,7 @@
 		471977A5281225800058BD4A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4719779B2812215A0058BD4A /* PlayerCardsViewModel.swift */,
+				4719779B2812215A0058BD4A /* PlayersViewModel.swift */,
 				471977AE28139F4F0058BD4A /* GamesViewModel.swift */,
 			);
 			path = ViewModels;
@@ -127,6 +132,7 @@
 			children = (
 				4760392B2808FD76003B587C /* CLTFanCApp.swift */,
 				4760392D2808FD76003B587C /* ContentView.swift */,
+				478E888D282C476500A9F796 /* AddPlayer.swift */,
 				471977A5281225800058BD4A /* ViewModels */,
 				471977A4281225790058BD4A /* Models */,
 				471977A3281222D10058BD4A /* Views */,
@@ -258,8 +264,10 @@
 				4760392E2808FD76003B587C /* ContentView.swift in Sources */,
 				471977A92812C72C0058BD4A /* NextGameTile.swift in Sources */,
 				4760392C2808FD76003B587C /* CLTFanCApp.swift in Sources */,
+				478E888E282C476500A9F796 /* AddPlayer.swift in Sources */,
 				471977A7281225EB0058BD4A /* PlayerCard.swift in Sources */,
-				4719779C2812215A0058BD4A /* PlayerCardsViewModel.swift in Sources */,
+				478E888C282AF20400A9F796 /* SquadCell.swift in Sources */,
+				4719779C2812215A0058BD4A /* PlayersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

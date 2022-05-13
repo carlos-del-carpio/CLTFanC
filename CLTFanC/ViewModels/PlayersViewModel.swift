@@ -5,7 +5,7 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
-class PlayerCardsViewModel: ObservableObject {
+class PlayersViewModel: ObservableObject {
     @Published var players: [Player] = [Player]()
     
     init() {

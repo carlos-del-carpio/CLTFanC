@@ -4,58 +4,62 @@
 import SwiftUI
 
 struct SquadView: View {
+    @EnvironmentObject var playersViewModel: PlayersViewModel
+    
     var body: some View {
         List {
-            ForEach(0..<10) {_ in
-                playerCell
-            }
-            .listStyle(.inset)
-            .listRowSeparator(.hidden)
-        }
-    }
-    
-    var playerCell: some View {
-        HStack {
-            Image("jordi_alcivar")
-                .resizable()
-                .frame(maxWidth: 80, maxHeight: 80)
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(8)
-                .padding(.trailing, 10)
-
-            
-            VStack (alignment: .leading) {
-                HStack (spacing: 2){
-                    Text("16")
-                        .font(.title2)
-                        .foregroundColor(Color("primary"))
-                        .fontWeight(.black)
-                    
-                    Text("Andre Shinyashiki")
-                        .font(.title2)
-                        .foregroundColor(Color("primary"))
-                        .fontWeight(.bold)
+            Section(header: Text("Goalkeepers")) {
+                ForEach(playersViewModel.players) { player in
+                    if player.primaryPosition == "Goalkeeper" {
+                        SquadCell(player: player)
+                    }
                 }
-                
-                Text("Midfielder")
-                    .foregroundColor(Color("primary"))
-                    .font(.subheadline)
-                
-                Text("Ecuador")
-                    .foregroundColor(Color("primary"))
-                    .font(.subheadline)
             }
+            .headerProminence(.increased)
+            .listStyle(.plain)
+            .listRowSeparatorTint(Color("primary"))
             
-            Spacer()
+            Section(header: Text("Defenders")) {
+                ForEach(playersViewModel.players) { player in
+                    if player.primaryPosition == "Defender" {
+                        SquadCell(player: player)
+                    }
+                }
+            }
+            .headerProminence(.increased)
+            .listStyle(.plain)
+            .listRowSeparatorTint(Color("primary"))
+            
+            Section(header: Text("Midfielders")) {
+                ForEach(playersViewModel.players) { player in
+                    if player.primaryPosition == "Midfielder" {
+                        SquadCell(player: player)
+                    }
+                }
+            }
+            .headerProminence(.increased)
+            .listStyle(.plain)
+            .listRowSeparatorTint(Color("primary"))
+            
+            Section(header: Text("Forwards")) {
+                ForEach(playersViewModel.players) { player in
+                    if player.primaryPosition == "Forward" {
+                        SquadCell(player: player)
+                    }
+                }
+            }
+            .headerProminence(.increased)
+            .listStyle(.plain)
+            .listRowSeparatorTint(Color("primary"))
         }
-        .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 100)
-        .cornerRadius(15)
-        .padding(.horizontal, 0)
     }
 }
 
 struct SquadView_Previews: PreviewProvider {
+    static let envObject = PlayersViewModel()
     static var previews: some View {
-        SquadView().preferredColorScheme(.dark)
+        SquadView()
+            .preferredColorScheme(.dark)
+            .environmentObject(envObject)
     }
 }
