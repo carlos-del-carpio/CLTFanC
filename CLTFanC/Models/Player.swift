@@ -12,7 +12,7 @@ import FirebaseStorage
 import FirebaseFirestoreSwift
 
 
-struct Player: Codable {
+struct Player: Codable, Identifiable {
     @DocumentID var id: String?
     var firstName: String
     var lastName: String

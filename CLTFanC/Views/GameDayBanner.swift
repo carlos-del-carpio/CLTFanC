@@ -11,18 +11,27 @@ struct GameDayBanner: View {
         RoundedRectangle(cornerRadius: 15)
             .padding(.horizontal, 16)
             .foregroundColor(Color("primary"))
-            .frame(width: UIScreen.main.bounds.width, height: 70)
+            .frame(width: UIScreen.main.bounds.width, height: 60)
             .overlay(
                 HStack {
                     Image(colorScheme == .light ? "crest" : "crest_mint")
                         .resizable()
                         .scaledToFit()
-                        .padding(.vertical, 4)
+                        .padding(.vertical, 1)
+                        .padding(.trailing, 5)
+                    
                     Text("It's Game Day!")
                         .foregroundColor(Color("secondary"))
                         .font(.title)
                         .fontWeight(.bold)
-                }.padding(.vertical, 5)
+                    
+                    Image(colorScheme == .light ? "crest" : "crest_mint")
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.vertical, 1)
+                }
+                .padding(.vertical, 5)
+                .padding(.leading, 5)
             )
     }
 }

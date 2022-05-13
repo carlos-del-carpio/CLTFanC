@@ -43,17 +43,17 @@ struct LargeGameCard: View {
                 .scaledToFit()
                 .padding([.leading])
 
-            Text("\(game!.awayTeam)")
+            Text(game?.awayTeam == "CLT" ? "\(game!.awayTeam)" : "\(game!.homeTeam)")
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.heavy)
             
-            Text("vs")
+            Text(game?.homeTeam == "CLT" ? "vs" : "at")
                 .font(.headline)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            Text("\(game!.homeTeam)")
+            Text(game?.awayTeam == "CLT" ? "\(game!.homeTeam)" : "\(game!.awayTeam)")
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.heavy)
